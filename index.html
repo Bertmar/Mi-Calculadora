@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="calculadora.css">
+<title>Calculadora</title>
+</head>
+
+<body>    
+<div class="calc">
+    <h1><center> Calculadora </center></h1>
+    <input type="text" id="display" class="display" disabled>
+
+    <div class="buttons">
+        <button onclick="calcular()" class="equal">=</button>
+        <button onclick="borrar()">⌫</button>       
+        <button onclick="limpiar()" class="clear">C</button>
+        
+        <button onclick="insertar('7')">7</button>
+        <button onclick="insertar('8')">8</button>
+        <button onclick="insertar('9')">9</button>
+        <button onclick="insertar('-')" class="operator">-</button>
+
+        <button onclick="insertar('4')">4</button>
+        <button onclick="insertar('5')">5</button>
+        <button onclick="insertar('6')">6</button>
+        <button onclick="insertar('+')" class="operator">+</button>
+
+        <button onclick="insertar('1')">1</button>
+        <button onclick="insertar('2')">2</button>
+        <button onclick="insertar('3')">3</button>
+
+        <button onclick="insertar('/')" class="operator">/</button>
+        <button onclick="insertar('.')">.</button>
+        <button onclick="insertar('0')"style="grid-column: span 2;">0</button>
+        <button onclick="insertar('*')" class="operator">*</button>       
+    </div>
+</div>
+
+<script src="calculadora.js">
+</script>
+</body>
+</html>
